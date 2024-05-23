@@ -123,10 +123,10 @@ body.dark-theme{
 /* Header */
 .profile {
   position: relative;
-  padding-top: 3.5rem;
+  padding-top: 2rem;
 }
 .profile_container {
-  row-gap: 2rem;
+ 
   display: flex;
   flex-direction: column;
 }
@@ -258,6 +258,10 @@ body.dark-theme{
 
 .filters_button:hover {
   background-color: var(--body-color);
+}
+
+.work_content {
+  margin: 0rem 1rem 0rem 1rem;
 }
 
 .works_card {
@@ -410,7 +414,7 @@ body.dark-theme{
     margin-right: auto;
   }
   .profile {
-    padding-top: 4rem;
+    padding-top: 2rem;
   }
   .profile_border {
     width: 135px;
@@ -445,6 +449,6 @@ body.dark-theme{
     font-size: var(--normal-font-size);
   }
   .footer_copy {
-    margin: 4.5rem 0 2.5rem;
+    margin: 3rem 0 2rem;
   }
 }

@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+import { Anchor } from "antd";
 
 function Main() {
   const style = {
@@ -12,11 +13,14 @@ function Main() {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: 400,
+    width: '80vw',
     bgcolor: "background.paper",
     border: "2px solid #000",
-    boxShadow: 24,
+    boxShadow: 10,
+    borderRadius:5,
     p: 4,
+    overflowY:'scroll',
+    height:"80vh",
   };
   const [activeSection, setActiveSection] = useState("#work");
   const handleButtonClick = (e) => {
@@ -218,12 +222,81 @@ function Main() {
           aria-describedby="modal-modal-description"
         >
           <Box sx={style}>
-            <Typography id="modal-modal-title" variant="h6" component="h2">
-              Text in a modal
-            </Typography>
-            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-            </Typography>
+            <div style={{}}>
+              <Anchor
+                direction="horizontal"
+                items={[
+                  {
+                    key: "about",
+                    href: "#about",
+                    title: "About",
+                  },
+                  {
+                    key: "role",
+                    href: "#role",
+                    title: "My contribution",
+                  },
+                  {
+                    key: "part-3",
+                    href: "#part-3",
+                    title: "Part 3",
+                  },
+                ]}
+              />
+            </div>
+            <div>
+              <div
+                id="about"
+                style={{
+                  width: "100%",
+                  height: "80vh",
+                  textAlign: "center",
+                  background: "rgba(0,255,0,0.02)",
+                }}
+              >
+                The Message Design Dashboard (MDD) helps you write a complete
+                Wireless Emergency Alert (WEA) using a database of message
+                content that is based on scientific research and has been
+                thoroughly tested.
+                <br></br>
+                Funded by the US Federal Emergency Management Agency (FEMA)
+                Integrated Public Alert and Warning Program (IPAWS) and
+                developed by a research team at the University at Albany, the
+                MDD helps IPAWS alerting authorities (AA) write effective
+                Wireless Emergency Alerts (WEAs). The MDD provides alerting
+                authorities with the ability to quickly write 90- and
+                360-character WEAs using message content that has been tested
+                with the public.
+              </div>
+              <div
+                id="role"
+                style={{
+                  width: "100%",
+                  height: "80vh",
+                  textAlign: "center",
+                  background: "rgba(0,0,255,0.02)",
+                }}
+              >
+                aasadasdsd Funded by the US Federal Emergency Management Agency
+                (FEMA) Integrated Public Alert and Warning Program (IPAWS) and
+                developed by a research team at the University at Albany, the
+                MDD helps IPAWS alerting authorities (AA) write effective
+                Wireless Emergency Alerts (WEAs). The MDD provides alerting
+                authorities with the ability to quickly write 90- and
+                360-character WEAs using message content that has been tested
+                with the public. Funded by the US Federal Emergency Management
+             
+              </div>
+              <div
+                id="part-3"
+                style={{
+                  // width: "100vw",
+                  // height: "100vh",
+                  textAlign: "center",
+                  background: "#FFFBE9",
+                }}
+              />
+            </div>
           </Box>
         </Modal>
       </div>

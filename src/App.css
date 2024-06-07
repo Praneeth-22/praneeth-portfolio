@@ -260,7 +260,7 @@ body.dark-theme{
   background-color: var(--body-color);
 }
 
-.work_content {
+.work_content,.projects_content {
   margin: 0rem 1rem 0rem 1rem;
 }
 
@@ -268,6 +268,7 @@ body.dark-theme{
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
+  border: 1px solid var(--text-color-lighten);
 }
 .works_card img {
   width: 100%;
